@@ -1,0 +1,21 @@
+HTTPServer:
+  ListenAddress: ""
+  Port: 8000
+  GracefulTimeout: "30s"
+  ReadTimeout: "30m"
+  WriteTimeout: "4m"
+  IdleTimeout: "15m"
+Database:
+  User: "abishar"
+  Password: "abishar"
+  DBName: "abishar"
+  Host: "localhost"
+  Port: "5432"
+  SSLMode: "disable"
+  Retry: 4 
+Redis:
+  Endpoint: "redis://localhost:6379"
+  Timeout: 10
+  MaxIdle: 10
+JWT:
+  Secret: "abishar-slobebi"

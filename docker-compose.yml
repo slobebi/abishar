@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  database-app:
+    image: postgres:latest
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./docker/schema/.:/docker-entrypoint-initdb.d/
+    environment:
+      POSTGRES_DB: abishar 
+      POSTGRES_USER: abishar 
+      POSTGRES_PASSWORD: abishar 
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"
